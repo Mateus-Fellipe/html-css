@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+h1, h2{
+    font-family: serif;
+}
+
+h1#principal {
+    background-color: #83C5BE;
+    color: aliceblue;
+    text-align: center;
+}
+
+.tituloSecundario{
+    max-width: 20%;
+
+    color: #006D77;
+    font-weight: 800;
+    line-height: 42px;
+    position: relative;
+    border-bottom: 3px solid #006d7700;
+    transition: transform 0.5s;
+    transform: translateX(0);
+}
+
+.tituloSecundario:hover{
+    content: "";
+    border-bottom: 3px solid #006D77;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: translateX(10px);
+}
+
+.destaque{
+    text-decoration: underline;
+    background-color: #006d7700;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.destaque:hover,
+.destaque:focus{
+    background-color: #e29578;
+    color: aliceblue;
+    border-radius: 5px;
+}

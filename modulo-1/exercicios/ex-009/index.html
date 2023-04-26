@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Hoje vamos trabalhar com listas</h1>
+    <hr>
+    <h2>Listas ordenadas</h2>
+    <p>
+        As listas ordenadas são marcadas pelas tags OL que seria ordened list e ela 
+        aceita os parametros TYPE que sinaliza o tipo da lista e o parametro START que
+        indica o inicio da lista, então vamos ver como funciona:
+    </p>
+    <ol>
+        <li>Ligue o notebook</li>
+        <li>abra o navegador</li>
+        <ol type="a">
+            <li>Abra no youtube</li>
+            <li>Ponha na playlist da aula</li>
+        </ol> 
+        <li>Comece a aula</li>
+        <ol type="a" start="3">
+            <li>Escreva os comentários</li>
+            <li>Escreva os detalhes</li>
+        </ol>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <p>
+        Já as listas não ordenadas são marcadas pelas tags UL que seria unordened list e ela 
+        aceita os parametros TYPE que sinaliza o tipo da lista 
+        (circle, square e disc), então vamos ver como funciona:
+    </p>
+    <ul>
+        <li>Item 1</li>
+            <ul type="circle">
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+                <li>Subitem 3</li>
+                <li>Subitem 4</li>
+            </ul>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Misturando as coisas</h2>
+    <p>Podemos ter uma lista ordenada dentro de uma não ordenada e vice versa de acordo com a necessidade</p>
+    <h3>Treino</h3>
+    <ol type="A">
+        <li></li>
+        <ul type="disc">
+            <li>Peito</li>
+            <ol>
+                <li>Supino reto</li>
+                <li>Voador</li>
+                <li>Supino inclinado</li>
+            </ol>
+            
+            <li>Triceps</li>
+            <ol start="4">
+                <li>Triceps corda</li>
+                <li>Triceps barra</li>
+                <li>Frances unilateral</li>
+                <li>Triceps teste</li>
+            </ol>
+
+            <li>Ombro</li>
+            <ol start="8">
+                <li>Elevação frontal</li>
+                <li>Elevação lateral</li>
+                <li>pullups</li>
+            </ol>
+        </ul>
+        <li></li>
+        <ul type="disc">
+            <li>Costa</li>
+            <ol>
+                <li>Remadada Frontal</li>
+                <li>Pulldown triangulo</li>
+                <li>Pulldown barra</li>
+            </ol>
+            <li>Biceps</li>
+            <ol start="4">
+                <li>Biceps alt</li>
+                <li>Biceps coss barra reta</li>
+                <li>Biceps cross corda</li>
+                <li>Biceps Maquina</li>
+            </ol>
+            <li>Trapezio</li>
+            <ol start="8">
+                <li>Remada alta</li>
+            </ol>
+        </ul>
+        <li></li>
+        <ul type="disc">
+            <li>Quadriceps</li>
+            <li>Posterior</li>
+            <li>Panturrilha</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>Botafogo</dt>
+        <dd>O Maior e mais tradicional clube do Brasil</dd>
+
+        <dt>Torcedor do Botafogo</dt>
+        <dd>Loucamente apaixonado pelo clube</dd>
+    </dl>
+
+    <p><strong>DICA!</strong> <br>Usar listas de definição aumentam as chances do site ser encontrado no Google, porque o mesmo usa isso para achar as definições que precisa</p>
+</body>
+</html>

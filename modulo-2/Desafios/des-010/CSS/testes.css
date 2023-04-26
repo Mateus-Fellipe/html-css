@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #08053a;
+}
+
+header h1{
+    color:#fff;
+    text-align: center;
+    margin: 25px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: max-content;
+    box-shadow: 10px 10px 10px pink; /*???????????????????????????????*/
+}
+
+nav > .menu{
+    list-style: none;
+}
+
+nav > .menu > li{
+    display: inline-block;
+    position: relative;
+}
+
+nav > .menu > li > a{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav > .menu > li:hover .subMenu{
+    display: block;
+}
+
+nav > .menu li::after{  
+    /*Externo: Como funciona o after? Ele cria um objeto "depois" do objeto principal. Nesse caso ele esta criando a linha que ira sublinhar os objetos*/
+    content: ""; /*Essa condição precisa existir pois indica que há um conteúdo ali, mesmo que vazio*/
+    display: block; /*Não entendi essa relação com o display block*/
+    width: 0; /*A largura começando em 0 é para ter o efeito de esticar quando passarmos o mouse em cima*/
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+nav > .menu li:hover::after{
+    width: 100%;
+}
+
+
+nav .subMenu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: max-content;
+    height: max-content;
+    top: 40px;
+    background-color: rgb(107, 0, 0);
+    box-shadow: 10px 10px 15px rgba(0,0,0,1);
+
+}
+
+nav .subMenu li{
+    border-bottom: 2px solid #fff;
+}
+
+nav .subMenu a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 40px 20px 5px;
+}
+
+main{
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+}

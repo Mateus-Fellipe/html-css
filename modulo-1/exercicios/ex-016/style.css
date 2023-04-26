@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "banner";
+    src: url(fonts/banner/[BANNER].ttf) format("truetype");
+}
+
+h1{
+    font-family: "banner", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 5em;
+}

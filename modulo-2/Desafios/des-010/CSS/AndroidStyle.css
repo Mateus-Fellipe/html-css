@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: 'NewSchool';
+    src: url(../fonts/VarsityTeam-Bold.otf) format(opentype);
+}
+
+:root{
+    --bg-Color: #fff;
+    --focus-color: #B4D2E7;
+    --color01: #130068;
+    --color02: #870000;
+    --color03: #6C756B;
+    --color04: #C98CA7;
+    --font-clear: #fff;
+    --font-dark: #000;
+
+    --font-default: Arial, Helvetica, sans-serif;
+    --font-logo: 'Lora', times, serif;
+    --font-tittle: 'NewSchool';
+
+    --weight-tittle: 700;
+    --space-menu: 30px;
+
+    --max-width-frame: 800px;
+    --min-width-frame: 400px;
+}
+
+header{
+    height: 150px;
+    background-image: linear-gradient(90deg, var(--color01), var(--color02));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Quando eu defino uma largura para um paragrafo ele é entendido como bloco, então o text-align deixa de funcionar // Para centralizar basta usar o margin: auto
+Não sei dizer se isso ocorre com outras tags como as tags que são inline*/
+
+header > h1{
+    font-family: var(--font-logo);
+    color: var(--font-clear);
+    font-size: 3em;
+    font-weight: var(--weight-tittle);
+    text-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
+}
+
+header > p{
+    font-size: 1.3em;
+    color: var(--font-clear);
+}
+
+nav{
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+}  
+
+nav > .menu {
+    max-width: var(--max-width-frame);
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+}
+
+nav > .menu > ul{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    float: left; /*??*/
+}
+
+nav > .menu > ul > li{
+    position: relative;
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav > .menu > ul > li > a{
+    color: var(--color01);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0 var(--space-menu);
+    display: block;
+    height: 100%;
+}
+
+nav .subMenu{
+    background-color: var(--bg-Color);
+    position: absolute;
+    top: 30px;   
+    width: max-content;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    display: none; /*Aqui eu escondo o submenu*/
+}
+
+nav .menu> ul > li:hover .subMenu{
+    display: block;
+}
+
+nav > .menu > ul > li > .subMenu li{
+    padding: 15px 30px;
+    width: max-content;
+}
+
+nav > .menu > ul > li > .subMenu a{
+    color: var(--color01);
+    text-decoration: none;
+}
+
+nav > .menu .menuItem::after{  
+    /*Externo: Como funciona o after? Ele cria um objeto "depois" do objeto principal. Nesse caso ele esta criando a linha que ira sublinhar os objetos*/
+    content: ""; /*Essa condição precisa existir pois indica que há um conteúdo ali, mesmo que vazio*/
+    display: block; /*Não entendi essa relação com o display block*/
+    width: 0; /*A largura começando em 0 é para ter o efeito de esticar quando passarmos o mouse em cima*/
+    height: 2px;
+    background-color: #870000;
+    transition: all 0.2s ease;
+}
+
+nav > .menu .menuItem:hover::after{
+    width: 100%;
+}
+
+main{
+    margin: 0 auto;
+    max-width: var(--max-width-frame);
+    min-width: var(--min-width-frame);
+    width: 100%;
+    margin-top: 25px;
+}
+
+main > article > img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+main > article > .bugdroid-pequeno{ 
+    width: 50%;
+}
+
+main > article > h1, h2{
+    font-family: var(--font-tittle);
+}
+
+main > article > p{
+    font-family: var(--font-default);
+}
+
+footer{
+    height: 150px;
+    background-color: var(--color02);
+    margin-top: 45px;
+}
+
+footer > p {
+    color: var(--font-clear);
+    text-align: center;
+}
+
+footer > p > a{ 
+    color: var(--font-clear);
+    text-decoration: none;
+    font-weight: bold;
+}

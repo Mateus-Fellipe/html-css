@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+}
+
+a:visited{
+    color: orange;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color:rgb(206, 186, 150);
+}

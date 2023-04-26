@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+:root{
+    --primary-color: #0a0646;
+    --secondary-color: rgb(119, 5, 5);
+    --border-color: #d2d2d256;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-height: 180px;
+    height: 100%;
+}
+
+header > h1{
+    color:#ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin:0;
+    padding: 25px 0;
+    text-align: center;
+    background-image: linear-gradient(90deg, #0a0646, rgb(90, 12, 12));
+}
+
+header > nav{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
+}
+
+header > nav > ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header > nav > ul > li{
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 2px solid rgba(0, 0, 0, 0.292);
+}
+
+header > nav > ul > #finalNav{
+    border-right: none;
+}
+
+header > nav > ul > li > a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.12s ease-out;
+}
+
+header > nav > ul > li > a:hover{
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+main{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main > article > .resume > .tittleResume > h1{
+    font-size: 3.5em;
+    margin-bottom: 25px;
+}
+
+main > article > .resume > .descriptionResume > p{
+    font-size: 1.2em;
+}
+main > article > .resume > .detailsResume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+main > article > .resume > .detailsResume > .share{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: black;
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabalhando com mídias</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>
+        Varie o tamanho da tela do site para ver as imagens variando em tamanho.
+    </p>
+    <h2>Com o parametro MAX</h2>
+    <a href="https://www.google.com" target="_blank">
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/unitedP.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/unitedM.png" type="image/png">
+            <img src="imagens/unitedG.png" alt="Imagem flexivel">
+            <!--
+                A ordem das imagens importa. Se usado o parametro MAX a ordem é crescente, isso quer dizer que a menor imagem
+                vem primeiro e você vai definir o tamanho limete da janela para ela se manter, em seguida a media, seguindo o mesmo
+                padrão e depois a maior, sendo esta a imagem padrão
+                Já com o parametro MIN, a maior imagem vem primeiro e você define a tamanho minimo para ela surgir, a média em
+                seguida e a menor usada como a imagem padrão.
+            -->
+        </picture>
+    </a>
+    <h2>Com o parametro MIN</h2>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/imgCelG.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/imgCelM.png" type="image/png"> 
+        <img src="imagens/imgCel.png" alt="Imagem flexivel">
+    </picture>
+    <hr>
+    <h1>Áudios</h1>
+    <p>
+        Aqui teremos dois modos de trabalhar com áudios. O primeiro um pouco mais limitado que é usando somente a 
+        tag AUDIO e a segunda é incrementando essa tag.
+    </p>
+    <h2>Versão 1</h2>
+    <p>
+        Nessa versão eu fico limitado a um tipo de audio, sem ter saídas quando o navegador do cliente não roda esse tipo
+    </p>
+    <audio src="midia/Fingerprint-Mini-Vandals.mp3" controls></audio>
+
+    <h2>Versão 2</h2>
+    <audio controls>
+        <source src="midia/Fingerprint-Mini-Vandals.mp3" type="audio/mpeg">
+        <source src="midia/Fingerprint-Mini-Vandals.ogg" type="audio/ogg">
+        <source src="midia/Fingerprint-Mini-Vandals.nav" type="audio/nav">
+        <p>
+            Infelizmente o seu navegador não suporta esse audio, para ouvir ele na integra você pode baixar 
+            <a href="midia/Fingerprint-Mini-Vandals.mp3" target="_self">Aqui</a>
+        </p>
+        <!--Aqui a ORDEM também IMPORTA.-->
+    </audio>
+</body>
+</html>

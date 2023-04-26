@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com fontes</title>
+
+    <style>
+        body{
+            background-color: rgb(174, 222, 222);
+        }
+
+        main{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: rgb(163, 121, 111);
+            box-shadow: -5px 10px 20px rgb(78, 101, 101);;
+        }
+
+        header, section{
+            font-size: 1.2em;
+
+        }
+
+        header{
+            padding-top: 10px;
+            border-bottom: 2px solid rgb(101, 130, 130);
+        }
+
+        h1{
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        p .destaque{
+            font-weight: 600;
+        }
+
+        p .destaque:hover{
+            text-decoration: underline;
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.5s;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Trabalhando com fontes</h1>
+        </header>
+        
+        <section>
+            <h2>Caracteristicas da tag css</h2>
+            <h3>Italico</h3>
+            <p>
+                A forma italica se da pelo uso do paramentro <span class="destaque">font-style: italic</span>
+            </p>
+            <h3>Peso</h3>
+            <p>
+                O peso da fonte se da pelo parametro <span class="destaque">font-weight: ...</span> tendo n variações como: <br>
+                <ul>
+                    <li>normal</li>
+                    <li>bold</li>
+                    <li>100</li>
+                    <li>200</li>
+                    <li>...</li>
+                    <li>900</li>
+                </ul>
+            </p>
+    
+            <h3>Tamanho</h3>
+            <p>
+                Partindo agora para o tamanho das fontes usamos o parametro <span class="destaque">font-size: ...</span> para definir ele. <br>
+                Geralmente usamos as medidas em "px" ou "em"(Unidade de medida de relação ao tamanho padrão) para passar o tamanho.
+            </p>
+        </section>
+    
+        <section>
+            <h2>Fontes do sitema</h2>
+            <p>
+                Aqui usamos as fontes que já estão na máquina, sem trazer nenhuma da intert.
+            </p>
+        
+            <h2>Google fontes</h2>    
+            <p>
+                Aqui vamos importar as fontes do google fontes, importando via css para evitar retrabalho. <br>
+                Como a explicação é extensa, vou deixar <a href="https://www.youtube.com/watch?v=FLuQonci9wU&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=14">aqui</a>
+                um vídeo que fala sobre
+            </p>
+        </section>
+    </main>
+</body>
+</html>

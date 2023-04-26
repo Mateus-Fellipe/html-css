@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.head{
+    height: 15vh;
+    background-color: rgb(1, 1, 63);
+}   
+
+.menu{
+    width: 70%;
+}
+
+.menuAparente a{
+    color: aliceblue;
+    text-decoration: none;
+    float: left;
+    margin: 15px 5px;
+}
+
+.menuAparente li{
+    position: relative;
+    list-style: none;
+}
+
+.submenu li{
+    list-style: inside;
+}
+.menuAparente > a{
+    color: rgb(106, 106, 106);
+}
+
+.menuAparente a:hover{
+    color: red;
+}

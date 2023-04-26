@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        mark{
+            background-color: rgb(155, 117, 194);
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium';
+        }
+    </style>
+
+    <title>Formatação de texto</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <p>
+        Vamos falar aqui algumas diferenças entre tags de forma e tags de sentido.
+    </p>
+    <hr>
+    <h2>Negrito</h2>
+    <p>
+        Nesse texto vou usar as duas formas de negrito, <b>destacando esse trecho</b> 
+        e <strong>destacando esse aqui</strong>. Mesmo parecendo iguais 
+        visivelmente a primeira usa a tag B que é puramente de forma, se tornando uma má
+        pratica,  já a segunda usa a tag STRONG que tem sentido então faz parte da 
+        semantica do HTML
+    </p>
+    <p><br></p>
+    <h2>Italico</h2>
+    <p>
+        Usando o mesmo conceito do anterior temos aqui,<i> um trecho em italico (tag I -
+         Não semantico)</i> e <em>esse outro também (tag EM - semantica)</em>
+    </p>
+    <p><br></p>
+    <h2>Listas</h2>
+    <p>
+        Para reforçar, vamos usar a tag UL e DIR que são tags para criar 
+        listas, nesse caso a primeira é usada e tem um sentido semantico, já a segunda
+        é  puramente de forma, mesmo que pareçam iguais. Segue os exemplos:
+        <dir>
+            <li>Ponto 1</li>
+            <li>Ponto 2</li>
+        </dir>
+
+        <ul>
+            <li>Ponto 3</li>
+            <li>Ponto 4</li>
+        </ul>
+    </p>
+    <p><br></p>
+    <h2>Marcação</h2>
+    <p>
+        Já pensou em dar um descaque marcando um trecho de código? então, isso é possivel
+        com a tag MARK, com ela podemos <mark>marcar trechos do texto como esse</mark>. <br>
+        Ou ainda podemos mudar a cor dessa marcação de duas maneiras, a primeira é por a tag
+        STYLE dentro da tag MARK <mark style="background-color:lightseagreen ;">como aqui</mark>
+        ou podemos criar uma referencia no <strong>head</strong> e usar a tag STYLE para para
+        definir essa cor.
+    </p>
+
+    <h2>Texto sub e sob escrito</h2>
+    <p>E para fazer formulas matemáticas, como fazemos? Simples, para criar fórmulas como X<sup>20</sup>+3=0
+        usamos a tag SUP para o expoente e SUB para o indice, como em H<sub>2</sub>O
+    </p>
+
+    <h2>Mais algumas tags</h2>
+    <p>
+        Temos o texto escluido (tag DEL) <del>como esse aqui</del> 
+    <br> O texto inserido (tag INS) <ins>como o daqui</ins> <br>
+    temos o texto pequeno (tag SMALL) <small>como essa coisinha fofa aqui</small> <br>
+    temos as citações <q>como essa daqui</q> <br>
+    e por fim temos o texto em código (tag CODE) como o a seguir <br>
+    <pre><code>
+        aux = int(imput("Entre com o numero"))
+        
+        if aux%2 == 0:
+            print("É par")
+        else:
+            print("É impar")
+    </code></pre> 
+    </p>
+</body>
+</html>
